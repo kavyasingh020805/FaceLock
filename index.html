@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition Door Control</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Firebase SDKs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/face-api.js/0.22.2/face-api.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Face Recognition System</h1>
+        
+        <div class="video-container">
+            <video id="video" autoplay muted></video>
+            <canvas id="canvas"></canvas>
+        </div>
+        
+        <div class="controls">
+            <button id="startButton">Start Camera</button>
+            <button id="captureButton" disabled>Capture and Analyze</button>
+        </div>
+        
+        <div class="status" id="status">Waiting for camera...</div>
+        
+        <div class="recognition-result closed" id="recognitionResult">Recognition Result: NO MATCH</div>
+        
+        <div class="registered-faces">
+            <h2>Registered Faces</h2>
+            <div class="face-grid" id="registeredFaces">
+                <!-- Face images will be loaded here -->
+                <div class="face-item">
+                    <img src="images/person1.jpg" alt="Person 1" id="face1">
+                    <p>Person 1</p>
+                </div>
+                <div class="face-item">
+                    <img src="images/person2.jpg" alt="Person 2" id="face2">
+                    <p>Person 2</p>
+                </div>
+                <div class="face-item">
+                    <img src="images/person3.jpg" alt="Person 3" id="face3">
+                    <p>Person 3</p>
+                </div>
+                <div class="face-item">
+                    <img src="images/person4.jpg" alt="Person 4" id="face4">
+                    <p>Person 4</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="log-container" id="logContainer">
+            <div class="log-entry">System initialized and ready.</div>
+        </div>
+    </div>
+
+    <!-- Load JS files -->
+    <script src="js/firebaseConfig.js"></script>
+    <script src="js/faceRecognition.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
