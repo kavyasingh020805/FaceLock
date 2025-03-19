@@ -1,7 +1,3 @@
-Here’s your modified README file with instructions for setting up the 
-
----
-
 # FaceLock: AI-Based Door Security System  
 
 ## 📌 Project Overview  
