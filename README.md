@@ -1,4 +1,4 @@
-Here’s your modified README file with instructions for setting up the ESP32-based door lock system:  
+Here’s your modified README file with instructions for setting up the 
 
 ---
 
