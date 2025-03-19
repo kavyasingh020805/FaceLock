@@ -143,7 +143,7 @@ scan_button = Button(button_frame, text="Scan Again", font=("Arial", 12), bg="#0
 scan_button.grid(row=0, column=2, padx=5)
 
 # Footer
-footer_label = Label(app, text="Made with ❤️ by Tanish Poddar & Prabhav Singh", font=("Arial", 12), fg="orange", bg="#121212")
+footer_label = Label(app, text="Made with ❤️ by Tanish Poddar, Prabhav Singh, Asmi Sharma & Kavya Singh", font=("Arial", 12), fg="orange", bg="#121212")
 footer_label.pack(side=tk.BOTTOM, pady=10)
 
 app.mainloop()
