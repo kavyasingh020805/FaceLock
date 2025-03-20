@@ -118,4 +118,4 @@ Ensure your `firebase_config.json` file follows this format:
 
 ---
 
-## 🏆 Made with ❤️ by Tanish Poddar & Prabhav Singh, Asmi Sharma & Kavya Singh
+## Made with ❤️ by Tanish Poddar, Prabhav Singh, Asmi Sharma & Kavya Singh.
